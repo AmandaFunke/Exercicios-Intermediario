@@ -1,0 +1,16 @@
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.exe
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.deps.json
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.runtimeconfig.json
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.runtimeconfig.dev.json
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.dll
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.pdb
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.csproj.AssemblyReference.cache
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.AssemblyInfoInputs.cache
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.AssemblyInfo.cs
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.csproj.CoreCompileInputs.cache
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.dll
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\refint\Exercicios Intermediario.dll
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.pdb
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.genruntimeconfig.cache
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\ref\Exercicios Intermediario.dll

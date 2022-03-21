@@ -6,7 +6,15 @@ namespace Exercicios_Intermediario
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Stopwatch\nType:\nB and ENTER - to begin the stopwatch\nS and ENTER - to stop the stopwatch\nQ and ENTER - to quit the stopwatch");
+
+
+
+        }
+
+        public class Stopwatch
+        {
+
         }
     }
 }
