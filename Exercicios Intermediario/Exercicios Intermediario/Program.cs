@@ -11,8 +11,9 @@ namespace Exercicios_Intermediario
 
             var keepGoing = true;
             var isCounting = false;
-            DateTime start;
-            DateTime stop;
+            //DateTime start;
+            //DateTime stop;
+
 
             while (keepGoing)
             {
@@ -32,8 +33,9 @@ namespace Exercicios_Intermediario
                     }
                     else
                     {
-                        start = DateTime.Now;
-                        Console.WriteLine("Begin: " + start.ToString());
+                        var start = new Stopwatch();
+
+                        Console.WriteLine("Start: " + start);
                         isCounting = true;
                     }
                 }
@@ -43,9 +45,14 @@ namespace Exercicios_Intermediario
 
                     if (isCounting)
                     {
-                        stop = DateTime.Now;
-                        Console.WriteLine("Stop: " + stop.ToString());
+                        
+                        
+                        var stop = new Stopwatch();
+                        Console.WriteLine("Stop: " + stop);
                         isCounting = false;
+
+                        var duration = new Stopwatch();
+                        Console.WriteLine("Duration: " + duration.Duration.ToString());
 
                     }
                     else
@@ -57,6 +64,32 @@ namespace Exercicios_Intermediario
                 {
                     Console.WriteLine("Invalid option");
                 }
+
+                
+            }
+        }
+    }
+
+    public class Stopwatch
+    {
+        public void Start()
+        {
+            var start = DateTime.Now;
+        }
+        public void Stop() 
+        {
+            var stop = DateTime.Now;
+        }
+
+        public int Duration
+        {
+            get 
+            {
+                DateTime start = Start();
+                DateTime stop = Stop();
+                var duration = stop - start;
+                int toInt = Convert.ToInt32(duration.Seconds);
+                return toInt;
             }
         }
     }
