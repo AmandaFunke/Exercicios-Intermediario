@@ -11,8 +11,8 @@ namespace Exercicios_Intermediario
 
             var keepGoing = true;
             var isCounting = false;
-            //DateTime start;
-            //DateTime stop;
+            Stopwatch start;
+            Stopwatch stop;
 
 
             while (keepGoing)
@@ -33,7 +33,7 @@ namespace Exercicios_Intermediario
                     }
                     else
                     {
-                        var start = new Stopwatch();
+                        start = Stopwatch.Start();
 
                         Console.WriteLine("Start: " + start);
                         isCounting = true;
@@ -47,12 +47,12 @@ namespace Exercicios_Intermediario
                     {
                         
                         
-                        var stop = new Stopwatch();
+                        stop = Stopwatch.Stop();
                         Console.WriteLine("Stop: " + stop);
                         isCounting = false;
 
                         var duration = new Stopwatch();
-                        Console.WriteLine("Duration: " + duration.Duration.ToString());
+                        Console.WriteLine("Duration: " + duration.Duration.ToString("c"));
 
                     }
                     else
@@ -72,27 +72,33 @@ namespace Exercicios_Intermediario
 
     public class Stopwatch
     {
-        public void Start()
-        {
-            var start = DateTime.Now;
-        }
-        public void Stop() 
-        {
-            var stop = DateTime.Now;
-        }
+        public DateTime Begin;
+        public DateTime End;
 
-        public int Duration
-        {
-            get 
-            {
-                DateTime start = Start();
-                DateTime stop = Stop();
-                var duration = stop - start;
-                int toInt = Convert.ToInt32(duration.Seconds);
-                return toInt;
-            }
-        }
-    }
+
+
+
+
+    //    public static Stopwatch Start()
+    //    {                       
+    //        var start = new Stopwatch();
+    //        start.Begin = DateTime.Now;
+    //        return start;
+    //    }
+    //    public static Stopwatch Stop() 
+    //    {                        
+    //        var stop = new Stopwatch();
+    //        stop.End = DateTime.Now;
+    //        return stop;
+    //    }
+
+    //    public static Stopwatch Duration()
+    //    {
+    //        var duration = End - Begin;
+    //        int toInt = Convert.ToInt32(duration.Seconds);
+    //        return duration;
+    //    }
+    //}
 
     
 
