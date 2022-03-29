@@ -1,0 +1,16 @@
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\bin\Debug\net5.0\Post (StackOverflow).exe
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\bin\Debug\net5.0\Post (StackOverflow).deps.json
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\bin\Debug\net5.0\Post (StackOverflow).runtimeconfig.json
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\bin\Debug\net5.0\Post (StackOverflow).runtimeconfig.dev.json
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\bin\Debug\net5.0\Post (StackOverflow).dll
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\bin\Debug\net5.0\Post (StackOverflow).pdb
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\Post (StackOverflow).csproj.AssemblyReference.cache
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\Post (StackOverflow).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\Post (StackOverflow).AssemblyInfoInputs.cache
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\Post (StackOverflow).AssemblyInfo.cs
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\Post (StackOverflow).csproj.CoreCompileInputs.cache
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\Post (StackOverflow).dll
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\refint\Post (StackOverflow).dll
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\Post (StackOverflow).pdb
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\Post (StackOverflow).genruntimeconfig.cache
+C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\Post (StackOverflow)\obj\Debug\net5.0\ref\Post (StackOverflow).dll

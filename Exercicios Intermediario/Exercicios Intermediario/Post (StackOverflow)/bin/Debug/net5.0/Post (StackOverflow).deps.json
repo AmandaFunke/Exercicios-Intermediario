@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Post (StackOverflow)/1.0.0": {
+        "runtime": {
+          "Post (StackOverflow).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Post (StackOverflow)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
