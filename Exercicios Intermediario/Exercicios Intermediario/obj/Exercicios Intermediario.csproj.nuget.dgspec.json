@@ -1,33 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amand\\Documents\\Exercícios Intermediário\\Exercicios Intermediario\\Exercicios Intermediario\\Exercicios Intermediario.csproj": {}
+    "E:\\Amanda\\Programation\\Udemy\\Intermediário\\Exercicios-Intermediario\\Exercicios Intermediario\\Exercicios Intermediario\\Exercicios Intermediario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amand\\Documents\\Exercícios Intermediário\\Exercicios Intermediario\\Exercicios Intermediario\\Exercicios Intermediario.csproj": {
+    "E:\\Amanda\\Programation\\Udemy\\Intermediário\\Exercicios-Intermediario\\Exercicios Intermediario\\Exercicios Intermediario\\Exercicios Intermediario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amand\\Documents\\Exercícios Intermediário\\Exercicios Intermediario\\Exercicios Intermediario\\Exercicios Intermediario.csproj",
+        "projectUniqueName": "E:\\Amanda\\Programation\\Udemy\\Intermediário\\Exercicios-Intermediario\\Exercicios Intermediario\\Exercicios Intermediario\\Exercicios Intermediario.csproj",
         "projectName": "Exercicios Intermediario",
-        "projectPath": "C:\\Users\\amand\\Documents\\Exercícios Intermediário\\Exercicios Intermediario\\Exercicios Intermediario\\Exercicios Intermediario.csproj",
-        "packagesPath": "C:\\Users\\amand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amand\\Documents\\Exercícios Intermediário\\Exercicios Intermediario\\Exercicios Intermediario\\obj\\",
+        "projectPath": "E:\\Amanda\\Programation\\Udemy\\Intermediário\\Exercicios-Intermediario\\Exercicios Intermediario\\Exercicios Intermediario\\Exercicios Intermediario.csproj",
+        "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
+        "outputPath": "E:\\Amanda\\Programation\\Udemy\\Intermediário\\Exercicios-Intermediario\\Exercicios Intermediario\\Exercicios Intermediario\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\amand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -61,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

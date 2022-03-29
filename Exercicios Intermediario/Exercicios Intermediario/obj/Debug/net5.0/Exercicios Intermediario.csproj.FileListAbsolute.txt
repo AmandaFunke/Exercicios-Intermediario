@@ -14,3 +14,19 @@ C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exe
 C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.pdb
 C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.genruntimeconfig.cache
 C:\Users\amand\Documents\Exercícios Intermediário\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\ref\Exercicios Intermediario.dll
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.csprojAssemblyReference.cache
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.GeneratedMSBuildEditorConfig.editorconfig
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.AssemblyInfoInputs.cache
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.AssemblyInfo.cs
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.csproj.CoreCompileInputs.cache
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.dll
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\ref\Exercicios Intermediario.dll
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.pdb
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.exe
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.deps.json
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.runtimeconfig.json
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.runtimeconfig.dev.json
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.dll
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\ref\Exercicios Intermediario.dll
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\bin\Debug\net5.0\Exercicios Intermediario.pdb
+E:\Amanda\Programation\Udemy\Intermediário\Exercicios-Intermediario\Exercicios Intermediario\Exercicios Intermediario\obj\Debug\net5.0\Exercicios Intermediario.genruntimeconfig.cache

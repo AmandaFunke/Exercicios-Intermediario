@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Threading;
 
 namespace Exercicios_Intermediario
 {
@@ -7,196 +7,127 @@ namespace Exercicios_Intermediario
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Stopwatch\nType:\nB and ENTER - to begin the stopwatch\nS and ENTER - to stop the stopwatch\nQ and ENTER - to quit the stopwatch");
-
             var keepGoing = true;
-            var isCounting = false;
-            Stopwatch start;
-            Stopwatch stop;
+            var stopwatch = new Stopwatch();
 
+
+            var stopwatch2 = new Stopwatch();
+            stopwatch2.Start();
 
             while (keepGoing)
-            {
-                var option = Console.ReadLine();
-                var lowerOption = option.ToLower();
+            {                
+                var statusString = "Waiting";
 
-                if (lowerOption == "q")
+                if (stopwatch.IsRunning)
+                    statusString = $"Running [{stopwatch.LastTime}]";
+                else if (stopwatch.LastTime != null)
+                    statusString = stopwatch.LastTime.ToString();
+
+
+                Console.Clear();
+                Console.WriteLine($"Stopwatch ({statusString})\n" +
+                    $"Type:\n" +
+                    $"B and ENTER - to begin the stopwatch\n" +
+                    $"S and ENTER - to stop the stopwatch\n" +
+                    $"A number and ENTER - to wait for that number in milliseconds\n" +
+                    $"ENTER - to refresh\n" +
+                    $"Q and ENTER - to quit the stopwatch");
+
+                var option = Console.ReadLine().ToLower();
+
+                switch (option)
                 {
-                    keepGoing = false;
-                }
-                else if (lowerOption == "b")
-                {
-
-                    if (isCounting)
-                    {
-                        Console.WriteLine("The system is already counting time");
-                    }
-                    else
-                    {
-                        start = Stopwatch.Start();
-
-                        Console.WriteLine("Start: " + start);
-                        isCounting = true;
-                    }
-                }
-                else if (lowerOption == "s")
-                {
-
-
-                    if (isCounting)
-                    {
+                    case "b":
+                        stopwatch.Start();
                         
-                        
-                        stop = Stopwatch.Stop();
-                        Console.WriteLine("Stop: " + stop);
-                        isCounting = false;
+                        break;
+                    case "s":
+                        stopwatch.Stop();
 
-                        var duration = new Stopwatch();
-                        Console.WriteLine("Duration: " + duration.Duration.ToString("c"));
+                        break;                    
+                    case "":
+                        //refresh
 
-                    }
-                    else
-                    {
-                        Console.WriteLine("You can't stop counting time without starting");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Invalid option");
-                }
+                        break;
+                    case "q":
+                        keepGoing = false;
 
-                
+                        break;
+                    default:
+                        if (int.TryParse(option, out var intOption))
+                            stopwatch.Wait(intOption);
+
+                        break;
+                }                
             }
+
+            stopwatch2.Stop();
+            Console.WriteLine($"Running app for: {stopwatch2.LastTime}");
+            ConsoleUtils.WaitKey();
         }
     }
 
     public class Stopwatch
     {
-        public DateTime Begin;
-        public DateTime End;
+        private DateTime? _startTime;
+        public bool IsRunning;
 
+        private TimeSpan? _lastTime;
+        public TimeSpan? LastTime
+        {
+            get
+            {
+                if (!IsRunning)
+                    return _lastTime;
 
+                _lastTime = DateTime.Now - _startTime.Value;
 
+                return _lastTime;
+            }
+        }
 
+        public void Start()
+        {
+            if (!IsRunning)
+            {
+                IsRunning = true;
+                _startTime = DateTime.Now;
+            }
+            else
+            {
+                Console.WriteLine("The system is already counting time");
+                ConsoleUtils.WaitKey();
 
-    //    public static Stopwatch Start()
-    //    {                       
-    //        var start = new Stopwatch();
-    //        start.Begin = DateTime.Now;
-    //        return start;
-    //    }
-    //    public static Stopwatch Stop() 
-    //    {                        
-    //        var stop = new Stopwatch();
-    //        stop.End = DateTime.Now;
-    //        return stop;
-    //    }
+                return;
+            }
+        }
 
-    //    public static Stopwatch Duration()
-    //    {
-    //        var duration = End - Begin;
-    //        int toInt = Convert.ToInt32(duration.Seconds);
-    //        return duration;
-    //    }
-    //}
+        public void Stop()
+        {
+            if (!IsRunning)
+            {
+                Console.WriteLine("Can't stop if it aint started, dummy.");
+                ConsoleUtils.WaitKey();
 
-    
+                return;
+            }
 
+            IsRunning = false;
+            _lastTime = DateTime.Now - _startTime.Value;
+        }
 
+        public void Wait(int milliseconds)
+        {
+            Thread.Sleep(milliseconds);
+        }
+    }
 
-
-
-
-
-    //internal class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        Console.WriteLine("Stopwatch\nType:\nB and ENTER - to begin the stopwatch\nS and ENTER - to stop the stopwatch\nQ and ENTER - to quit the stopwatch");
-
-    //        var keepGoing = true;
-    //        var isCounting = false;
-
-    //        while (keepGoing)
-    //        {
-    //            var option = Console.ReadLine();
-    //            var lowerOption = option.ToLower();
-
-    //            if (lowerOption == "q")
-    //            {
-    //                keepGoing = false;
-    //            }
-    //            else if (lowerOption == "b")
-    //            {
-    //                var start = new Stopwatch();
-    //                start.Start();
-    //                Console.WriteLine(start.Begin);
-
-    //                if (isCounting)
-    //                {
-    //                    Console.WriteLine("The system is already counting time");
-    //                }
-    //                else
-    //                {
-    //                    DateTime start = DateTime.Now;
-    //                    Console.WriteLine("Begin: " + start.ToString());
-    //                    counting = true;
-    //                }
-    //            }
-    //            else if (lowerOption == "s")
-    //            {
-
-
-    //                if (isCounting)
-    //                {
-    //                    DateTime stop = DateTime.Now;
-    //                    Console.WriteLine("Stop: " + stop.ToString());
-    //                    isCounting = false;
-
-    //                }
-    //                else
-    //                {
-    //                    Console.WriteLine("You can't stop counting time without starting");
-    //                }
-    //            }
-    //            else
-    //            {
-    //                Console.WriteLine("Invalid option");
-    //            }
-    //        }
-    //    }
-    //}
-
-    //public class Stopwatch
-    //{
-    //    public bool isCounting = false;
-    //    public DateTime Begin { get; set; }
-    //    public DateTime End { get; set; }
-
-    //    public void Start()
-    //    {
-    //        if (isCounting)
-    //        {
-    //            throw new ArgumentException("Start", "You can't start counting time when the system is already counting time");
-    //        }
-    //        else
-    //        {
-    //            Begin = DateTime.Now;
-    //            isCounting = true;
-    //        }
-    //    }
-
-    //    public void Stop()
-    //    {
-    //        if (isCounting)
-    //        {
-    //            End = DateTime.Now;
-    //            isCounting = false;
-    //        }
-    //        else
-    //        {
-    //            throw new ArgumentException("Stop", "You can't stop counting time without starting");
-    //        }
-    //    }
-    //}
+    public static class ConsoleUtils
+    {
+        public static void WaitKey()
+        {
+            Console.WriteLine("Press anything to continue...");
+            Console.ReadKey();
+        }
+    }
 }
