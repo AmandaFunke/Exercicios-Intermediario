@@ -29,21 +29,31 @@ namespace Post__StackOverflow_
             while (newPost)
             {
                 Console.Clear();
-                Console.WriteLine("Creating a new post!\nType the Title: ");
+                Console.Write("Creating a new post!\nInsert here the Title: ");
                 var title = Console.ReadLine();
 
-                Console.WriteLine("Type the Description: ");
+                Console.Write("Insert here the Description: ");
                 var description = Console.ReadLine();
 
                 var post = new Post(title, description);
 
-                Console.WriteLine("Votes: " + post.Votes);
-                Console.WriteLine("Press U to Up-Vote or D to Down-Vote this post, or press N to create a New Post");
-                
                 var voting = true;
 
                 while (voting)
-                {   
+                {
+                    Console.Clear();
+                    Console.WriteLine("Here is your post:\n");
+
+                    Console.WriteLine($"Title: {post.Title}\n" +
+                        $"Description: {post.Description}\n" +
+                        $"Creation: {post.Creation}");
+
+                    Console.WriteLine("Votes: " + post.Votes);
+                    Console.WriteLine("\nPress U to Up-Vote\n" +
+                        "Press D to Down-Vote\n" +
+                        "Press N to create a New Post\n" +
+                        "Press Q to Quit\n");
+
                     var vote = Console.ReadLine().ToLower();
 
                     switch (vote)
@@ -60,8 +70,14 @@ namespace Post__StackOverflow_
                             voting = false;
 
                             break;
+                        case "q":
+                            voting = false; 
+                            newPost = false;
+
+                            break;
                         default:
                             Console.WriteLine("Invalid option");
+                            Console.ReadKey();
 
                             break;
                     }                    
@@ -77,32 +93,31 @@ namespace Post__StackOverflow_
         public string Creation;
         private int _vote = 0;
 
+        public int Votes
+        {
+            get
+            {
+                return _vote;
+            }
+        }
+
         public Post(string title, string description)
         {            
             Title = title;
             Description = description;
             Creation = DateTime.Now.ToString();
-
-            Console.WriteLine($"Title: {Title}\nDescription: {Description}\nCreation: {Creation}");
         }
 
         public int UpVote()
         {
             _vote++;
-            Console.WriteLine("Votes:" + _vote);
             return _vote;
         }
 
         public int DownVote()
         {
             _vote--;
-            Console.WriteLine("Votes:" + _vote);
             return _vote;
-        }
-
-        public int Votes
-        {
-            get { return _vote; }
-        }
+        }        
     }
 }
