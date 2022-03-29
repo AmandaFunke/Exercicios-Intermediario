@@ -48,8 +48,8 @@ namespace Post__StackOverflow_
                         $"Description: {post.Description}\n" +
                         $"Creation: {post.Creation}");
 
-                    Console.WriteLine("Votes: " + post.Votes);
-                    Console.WriteLine("\nPress U to Up-Vote\n" +
+                    Console.WriteLine($"Votes: {post.Votes}\n");
+                    Console.WriteLine("Press U to Up-Vote\n" +
                         "Press D to Down-Vote\n" +
                         "Press N to create a New Post\n" +
                         "Press Q to Quit\n");
