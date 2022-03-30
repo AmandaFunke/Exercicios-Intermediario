@@ -29,6 +29,7 @@ namespace Post__StackOverflow_
             while (newPost)
             {
                 Console.Clear();
+
                 Console.Write("Creating a new post!\nInsert here the Title: ");
                 var title = Console.ReadLine();
 
@@ -42,17 +43,18 @@ namespace Post__StackOverflow_
                 while (voting)
                 {
                     Console.Clear();
-                    Console.WriteLine("Here is your post:\n");
 
-                    Console.WriteLine($"Title: {post.Title}\n" +
+                    Console.WriteLine($"Here is your post:\n" +
+                        $"\n" +
+                        $"Title: {post.Title}\n" +
                         $"Description: {post.Description}\n" +
-                        $"Creation: {post.Creation}");
-
-                    Console.WriteLine($"Votes: {post.Votes}\n");
-                    Console.WriteLine("Press U to Up-Vote\n" +
-                        "Press D to Down-Vote\n" +
-                        "Press N to create a New Post\n" +
-                        "Press Q to Quit\n");
+                        $"Creation: {post.Creation}\n" +
+                        $"Votes: {post.Votes}\n" +
+                        $"\n" +
+                        $"Press U to Up-Vote\n" +
+                        $"Press D to Down-Vote\n" +
+                        $"Press N to create a New Post\n" +
+                        $"Press Q to Quit\n");
 
                     var vote = Console.ReadLine().ToLower();
 
