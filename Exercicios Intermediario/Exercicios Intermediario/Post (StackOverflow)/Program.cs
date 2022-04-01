@@ -46,10 +46,7 @@ namespace Post__StackOverflow_
 
                     Console.WriteLine($"Here is your post:\n" +
                         $"\n" +
-                        $"Title: {post.Title}\n" +
-                        $"Description: {post.Description}\n" +
-                        $"Creation: {post.Creation}\n" +
-                        $"Votes: {post.Votes}\n" +
+                        $"{post.WritePost()}" +
                         $"\n" +
                         $"Press U to Up-Vote\n" +
                         $"Press D to Down-Vote\n" +
@@ -120,6 +117,14 @@ namespace Post__StackOverflow_
         {
             _vote--;
             return _vote;
-        }        
+        }
+        
+        public string WritePost()
+        {
+            return $"Title: {Title}\n" +
+                        $"Description: {Description}\n" +
+                        $"Creation: {Creation}\n" +
+                        $"Votes: {Votes}\n";
+        }
     }
 }
